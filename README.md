@@ -57,3 +57,6 @@ npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 ```sh
 npm run lint
 ```
+
+上传文件
+scp -P 36000 -r ./dist root@114.132.69.84:/usr/local/nginx/html
