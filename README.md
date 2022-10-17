@@ -64,3 +64,15 @@ scp -P 36000 -r ./dist root@114.132.69.84:/usr/local/nginx/html
 add sth
 
 add sth 2
+
+add sth 4
+
+add sth 5
+
+add 6
+
+add 7
+
+add 8
+
+add 9
