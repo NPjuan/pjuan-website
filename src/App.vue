@@ -1,13 +1,23 @@
 <script setup lang="ts">
 import * as XLSX from "xlsx";
 import { RouterLink, RouterView, useRouter } from 'vue-router'
-console.log('XLSX', XLSX);
+import { useTranslation } from '@tencent/ti18n-vue3-sdk'
+
 const router = useRouter()
+const { ti18n, t } = useTranslation()
+console.log('ti18fffn', ti18n.getDataByLanguage('en'));
+function changeLanguage() {
+  if (ti18n.language === 'en') {
+    ti18n.changeLanguage('zh')
+  } else {
+    ti18n.changeLanguage('en')
+  }
+}
 </script>
 
 <template>
-  <header>
-    
+  <header @click="changeLanguage">
+    {{ $t('你好') }}
   </header>
   <RouterView />
 </template>
